@@ -1,10 +1,10 @@
 # Generadores de datos para practicar modelado de machine learning
 
-Esta es una librería que les permitirá generar datos de manera aleatoria con Python. Con ella podrán generar datos para entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
+Este módulo que les permitirá generar datos de manera aleatoria con Python. Con él podrán generar datos para entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
 
 # Setup
 
-Para instalar esta librería lo único que tienen que hacer es forkear este repositorio y luego clonarlo en su sistema.
+Para instalar este módulo lo único que tienen que hacer es forkear este repositorio y luego clonarlo en su sistema.
 
 ### Requisitos:
 -   Numpy
@@ -12,7 +12,7 @@ Para instalar esta librería lo único que tienen que hacer es forkear este repo
 
 # Cómo usar
 
-Para tener disponibles todas las funciones de esta librería, es necesario crear un nuevo archivo de python dentro de la carpeta donde se encuentra el archivo `Generadores.py` e importarla con la siguiente línea de código:
+Para tener disponibles todas las funciones de este módulo, es necesario crear un nuevo archivo de python dentro de la carpeta donde se encuentra el archivo `Generadores.py` e importarla con la siguiente línea de código:
 
 ```python
 from Generadores import *
