@@ -29,7 +29,7 @@ DatosSVM()
 ```
 ### Ejemplo:
 
-La mejor manera de usar esta librería es llamar a una función y guardarla en una variable:
+La mejor manera de usar este módulo es llamar a una función y guardarla en una variable:
 
 ```python
 datos = DatosClusters()
