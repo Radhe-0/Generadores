@@ -1,6 +1,6 @@
 # Generadores de datos para practicar modelado de machine learning
 
-Este módulo que les permitirá generar datos de manera aleatoria con Python. Con él podrán generar datos para entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
+Este módulo que les permitirá generar datos de manera aleatoria con Python. Con ellos tendrán la capacidad de entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
 
 # Setup
 
