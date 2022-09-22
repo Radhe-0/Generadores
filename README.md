@@ -53,7 +53,7 @@ print(datos)
 ### Más ejemplos:
 
 ```python
-datos = DatosLineales()
+datos = DatosLineales(100)
 df = pd.DataFrame(datos, columns = ['x', 'y'])
 df.plot.scatter(x = 'x', y = 'y')
 ```
