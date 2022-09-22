@@ -14,7 +14,9 @@ Para instalar esta librería lo único que tienen que hacer es forkear este repo
 
 Para tener disponibles todas las funciones de esta librería, es necesario crear un nuevo archivo de python dentro de la carpeta donde se encuentra el archivo `Generadores.py` e importarla con la siguiente línea de código:
 
-    from Generadores import *
+```python
+from Generadores import *
+```
 
 Con esto ya tendrán disponibles las siguientes funciones:
 
@@ -25,7 +27,7 @@ DatosClusters()
 DatosLRegression()
 DatosSVM()
 ```
-### Ejemplos:
+### Ejemplo:
 
 La mejor manera de usar esta librería es llamar a una función y guardarla en una variable:
 
@@ -34,7 +36,7 @@ datos = DatosClusters()
 print(datos)
 ```
 
-output:
+>output:
 
 ```
 [(45.27023440496043, 35.27023440496043),
@@ -55,16 +57,44 @@ datos = DatosLineales()
 df = pd.DataFrame(datos, columns = ['x', 'y'])
 df.plot.scatter(x = 'x', y = 'y')
 ```
-output:
+>output:
 
 <img src="https://i.imgur.com/53Mlly7.png"/>
 
 ```python
 datos = DatosNoLineales(80)
-data_frame = pd.DataFrame(datos, columns=['x', 'y'])
-data_frame.plot.scatter(x='x', y='y')
+df = pd.DataFrame(datos, columns=['x', 'y'])
+df.plot.scatter(x='x', y='y')
 ```
 
-output:
+>output:
 
 <img src="https://i.imgur.com/iDfPV3l.png"/>
+
+```python
+datos = DatosLRegression(20)
+data_frame = pd.DataFrame(datos, columns=['eje x', 'eje y'])
+data_frame.plot.scatter(x='eje x', y='eje y')
+```
+
+>output:
+
+<img src="https://i.imgur.com/PzOCsup.png"/>
+
+```python
+datos = DatosVRegression(40)
+df = pd.DataFrame(datos, columns=['x', 'y'])
+df.plot.scatter(x='x', y='y')
+```
+>output:
+
+<img src="https://i.imgur.com/GNiMeew.png"/>
+
+```python
+datos = DatosClusters(150)
+df = pd.DataFrame(datos, columns=['x', 'y'])
+df.plot.scatter(x='x', y='y')
+
+>output:
+
+<img src="https://i.imgur.com/Z4X8TUF.png"/>
