@@ -94,6 +94,7 @@ df.plot.scatter(x='x', y='y')
 datos = DatosClusters(150)
 df = pd.DataFrame(datos, columns=['x', 'y'])
 df.plot.scatter(x='x', y='y')
+```
 
 >output:
 
