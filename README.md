@@ -1,6 +1,6 @@
 # Generadores de datos para practicar modelado de machine learning
 
-Esta es una librería que les permitirá generar datos de manera aleatoria con Python. Con ella podrán tener datos para entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
+Esta es una librería que les permitirá generar datos de manera aleatoria con Python. Con ella podrán generar datos para entrenar un modelo de inteligencia artificial con una pequeña línea de código sin tener que buscar datasets.
 
 # Setup
 
