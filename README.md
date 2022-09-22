@@ -88,7 +88,7 @@ data_frame.plot.scatter(x='eje x', y='eje y')
 
 
 ```python
-datos = DatosVRegression(40)
+datos = DatosSVM(40)
 df = pd.DataFrame(datos, columns=['x', 'y'])
 df.plot.scatter(x='x', y='y')
 ```
