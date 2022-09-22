@@ -61,6 +61,8 @@ df.plot.scatter(x = 'x', y = 'y')
 
 <img src="https://i.imgur.com/53Mlly7.png"/>
 
+
+
 ```python
 datos = DatosNoLineales(80)
 df = pd.DataFrame(datos, columns=['x', 'y'])
@@ -70,6 +72,8 @@ df.plot.scatter(x='x', y='y')
 >output:
 
 <img src="https://i.imgur.com/iDfPV3l.png"/>
+
+
 
 ```python
 datos = DatosLRegression(20)
@@ -81,6 +85,8 @@ data_frame.plot.scatter(x='eje x', y='eje y')
 
 <img src="https://i.imgur.com/PzOCsup.png"/>
 
+
+
 ```python
 datos = DatosVRegression(40)
 df = pd.DataFrame(datos, columns=['x', 'y'])
@@ -89,6 +95,7 @@ df.plot.scatter(x='x', y='y')
 >output:
 
 <img src="https://i.imgur.com/GNiMeew.png"/>
+
 
 ```python
 datos = DatosClusters(150)
@@ -99,3 +106,39 @@ df.plot.scatter(x='x', y='y')
 >output:
 
 <img src="https://i.imgur.com/Z4X8TUF.png"/>
+
+
+
+# Aplicaciones al modelado de machine learning
+
+```python
+# Para KMeans Clustering
+
+# Importamos las librerías (también usaremos numpy y pandas)
+from sklearn.cluster import KMeans
+import seaborn as sns
+
+# Cargamos los datos
+datos = DatosClusters(200)
+df = pd.DataFrame(datos, columns=['x', 'y'])
+
+# Transformamos los datos en un array de numpy (dos formas)
+# NOTA: Son arrays 2D de (150, 2)
+datos_transformados = df.to_numpy() # Primera forma: A través de un dataframe
+datos_transformados = np.asarray(datos) # Segunda forma: A través de una lista
+
+# Modelamos
+modelo = KMeans(n_clusters=5) # Creamos el modelo
+modelo.fit(datos_transformados) # Entrenamos el modelo
+predicciones = modelo.predict(datos_transformados) # Hacemos las predicciones
+
+# Graficamos
+sns.scatterplot(x='x', y='y', data=df, hue=predicciones, palette='Set1')
+```
+>output:
+
+<img src="https://i.imgur.com/ECPAl4G.png"/>
+
+
+
+>Más ejemplos en `Generador_de_datos.ipynb`
