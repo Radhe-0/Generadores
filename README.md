@@ -26,7 +26,8 @@ DatosNoLineales()
 DatosClusters()
 DatosLRegression()
 DatosSVM()
-DatosAltura()
+DatosDistNormal()
+DatosDistNormal3D()
 ```
 ### Ejemplo:
 
