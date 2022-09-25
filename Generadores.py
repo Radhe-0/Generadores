@@ -90,7 +90,7 @@ def DatosAltura(num=10):
     personas = np.linspace(0,1,num)
     lista = []
 
-    for i in zip(alturas,personas):
+    for i in zip(personas,alturas):
         lista.append(i)
     
     return lista
