@@ -26,6 +26,7 @@ DatosNoLineales()
 DatosClusters()
 DatosLRegression()
 DatosSVM()
+DatosAltura()
 ```
 ### Ejemplo:
 
