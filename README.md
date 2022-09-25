@@ -24,8 +24,10 @@ Con esto ya tendrán disponibles las siguientes funciones:
 DatosLineales()
 DatosNoLineales()
 DatosClusters()
+DatosClusters3D()
 DatosLRegression()
 DatosSVM()
+DatosSVM3D()
 DatosDistNormal()
 DatosDistNormal3D()
 ```
