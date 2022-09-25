@@ -84,13 +84,26 @@ def DatosSVM(num=10):
     return lista
 
 ###########
-def DatosAltura(num=10):
+def DatosDistNormal(num=10):
 
-    alturas = np.random.normal(1.70,0.16,num)
-    personas = np.linspace(0,1,num)
+    y = np.random.normal(50,0.13,num)
+
+    x = np.linspace(0,1,num)
     lista = []
 
-    for i in zip(personas,alturas):
+    for i in zip(x,y):
+        lista.append(i)
+    
+    return lista
+###########
+def DatosDistNormal3D(num=10):
+
+    y = np.random.normal(50,0.13,num)
+    x = np.linspace(0,1,num)
+    z = np.random.normal(1000,0.13,num)
+    lista = []
+
+    for i in zip(x,y,z):
         lista.append(i)
     
     return lista
