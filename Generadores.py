@@ -82,3 +82,15 @@ def DatosSVM(num=10):
         lista.append(i)
 
     return lista
+
+###########
+def DatosAltura(num=10):
+
+    alturas = np.random.normal(1.70,0.16,num)
+    personas = np.linspace(0,1,num)
+    lista = []
+
+    for i in zip(alturas,personas):
+        lista.append(i)
+    
+    return lista
