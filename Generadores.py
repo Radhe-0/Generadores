@@ -86,7 +86,7 @@ def DatosSVM(num=10):
 ###########
 def DatosDistNormal(num=10):
 
-    y = np.random.normal(50,0,num)
+    y = np.random.normal(50,0.03,num)
 
     x = np.linspace(0,1,num)
     lista = []
