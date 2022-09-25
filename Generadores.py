@@ -10,7 +10,7 @@ def DatosLineales(num=10):
     y = np.random.randint(1,10) + np.random.randint(4,10) * x + np.random.randn(num,1)
     y_ = [float(i) for i in y]
     lista = []
-    
+
     for i in zip(x_,y_):
         lista.append(i)
 
@@ -25,7 +25,7 @@ def DatosNoLineales(num=10):
     y = x + 2 * x ** 3 + np.random.randn(num,1)
     y_ = [float(i) for i in y]
     lista = []
-    
+
     for i in zip(x_,y_):
         lista.append(i)
 
@@ -44,7 +44,7 @@ def DatosClusters(num=10):
 
     for i in zip(eje_x, eje_y):
         puntos.append(i)
-    
+
     return puntos
 
 
@@ -67,7 +67,7 @@ def DatosLRegression(num=10):
 
     for i in zip(valores_2[0], unos):
         lista.append(i)
-    
+
     return lista
 
 
@@ -82,7 +82,18 @@ def DatosSVM(num=10):
         lista.append(i)
 
     return lista
+###########
+def DatosSVM3D(num=10):
 
+    X = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
+    Y = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
+    Z = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
+    lista = []
+
+    for i in zip(X,Y,Z):
+        lista.append(i)
+
+    return lista
 ###########
 def DatosDistNormal(num=10):
 
@@ -93,7 +104,7 @@ def DatosDistNormal(num=10):
 
     for i in zip(x,y):
         lista.append(i)
-    
+
     return lista
 ###########
 def DatosDistNormal3D(num=10):
@@ -105,5 +116,5 @@ def DatosDistNormal3D(num=10):
 
     for i in zip(x,y,z):
         lista.append(i)
-    
+
     return lista
