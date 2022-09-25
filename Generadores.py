@@ -47,7 +47,23 @@ def DatosClusters(num=10):
 
     return puntos
 
+###########
+def DatosClusters3D(num=10):
 
+    numeros = np.random.rand(num)
+    int_x = np.random.randint(0,100,size=num)
+    int_y = np.random.randint(0,100,size=num)
+    int_z = np.random.randint(0,100,size=num)
+    eje_x = np.sum([int_x, numeros], axis=0)
+    eje_y = np.sum([int_y, numeros], axis=0)
+    eje_z = np.sum([int_z, numeros], axis=0)
+
+    lista = []
+
+    for i in zip(eje_x, eje_y, eje_z):
+        lista.append(i)
+    
+    return lista
 ###########
 def DatosLRegression(num=10):
 
