@@ -28,6 +28,8 @@ DatosClusters3D()
 DatosLRegression()
 DatosSVM()
 DatosSVM3D()
+DatosSVM2()
+DatosSVM23D()
 DatosDistNormal()
 DatosDistNormal3D()
 ```
