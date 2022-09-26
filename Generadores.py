@@ -16,7 +16,19 @@ def DatosLineales(num=10):
 
     return lista
 
+#############
+def DatosLineales3D(num=10):
 
+    x = 2 * np.random.rand(num,1)
+    x_ = [float(i) for i in x]
+    y = np.random.randint(1,10) + np.random.randint(4,10) * x + np.random.randn(num,1)
+    y_ = [float(i) for i in y]
+    lista = []
+
+    for i in zip(x_,y_):
+        lista.append(i)
+
+    return lista
 #############
 def DatosNoLineales(num=10):
 
@@ -107,6 +119,40 @@ def DatosSVM3D(num=10):
     lista = []
 
     for i in zip(X,Y,Z):
+        lista.append(i)
+
+    return lista
+
+###########
+def DatosSVM2(num=10):
+
+    X = np.linspace(0,100,num)
+    Y = np.linspace(0,100,num)
+
+    Xmod = X * np.random.randn(num)
+    Ymod = Y * np.random.randn(num)
+
+    Xmod2 = X * np.random.randn(num) + 500
+    Ymod2 = Y * np.random.randn(num) + 500
+
+    Xmod3 = X * np.random.randn(num)
+    Ymod3 = Y * np.random.randn(num) + 500
+
+    Xmod4 = X * np.random.randn(num) + 500
+    Ymod4 = Y * np.random.randn(num)
+
+    lista = []
+    
+    for i in zip(Xmod, Ymod):
+        lista.append(i)
+
+    for i in zip(Xmod2, Ymod2):
+        lista.append(i)
+
+    for i in zip(Xmod3, Ymod3):
+        lista.append(i)
+
+    for i in zip(Xmod4, Ymod4):
         lista.append(i)
 
     return lista
