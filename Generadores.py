@@ -167,7 +167,7 @@ def DatosSVM2(num=10):
     return lista
 #################################################
 
-def DatosSVM23D():
+def DatosSVM23D(num=10):
     
     lista = []
     
