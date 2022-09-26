@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
+#################################################
 
-############
 def DatosLineales(num=10):
 
     x = 2 * np.random.rand(num,1)
@@ -16,7 +16,8 @@ def DatosLineales(num=10):
 
     return lista
 
-#############
+#################################################
+
 def DatosLineales3D(num=10):
 
     x = 2 * np.random.rand(num,1)
@@ -29,7 +30,9 @@ def DatosLineales3D(num=10):
         lista.append(i)
 
     return lista
-#############
+
+#################################################
+
 def DatosNoLineales(num=10):
 
     x = 2 * np.random.rand(num,1)
@@ -43,8 +46,8 @@ def DatosNoLineales(num=10):
 
     return lista
 
+#################################################
 
-###########
 def DatosClusters(num=10):
 
     numeros = np.random.rand(num)
@@ -59,7 +62,8 @@ def DatosClusters(num=10):
 
     return puntos
 
-###########
+#################################################
+
 def DatosClusters3D(num=10):
 
     numeros = np.random.rand(num)
@@ -76,7 +80,9 @@ def DatosClusters3D(num=10):
         lista.append(i)
     
     return lista
-###########
+
+#################################################
+
 def DatosLRegression(num=10):
 
     ceros = np.zeros(num)
@@ -98,8 +104,8 @@ def DatosLRegression(num=10):
 
     return lista
 
+#################################################
 
-###########
 def DatosSVM(num=10):
 
     X = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
@@ -110,7 +116,9 @@ def DatosSVM(num=10):
         lista.append(i)
 
     return lista
-###########
+
+#################################################
+
 def DatosSVM3D(num=10):
 
     X = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
@@ -123,7 +131,8 @@ def DatosSVM3D(num=10):
 
     return lista
 
-###########
+#################################################
+
 def DatosSVM2(num=10):
 
     X = np.linspace(0,100,num)
@@ -156,7 +165,9 @@ def DatosSVM2(num=10):
         lista.append(i)
 
     return lista
-###########
+
+#################################################
+
 def DatosDistNormal(num=10):
 
     y = np.random.normal(50,0.03,num)
@@ -168,7 +179,9 @@ def DatosDistNormal(num=10):
         lista.append(i)
 
     return lista
-###########
+
+#################################################
+
 def DatosDistNormal3D(num=10):
 
     y = np.random.normal(50,0.16,num)
@@ -180,3 +193,27 @@ def DatosDistNormal3D(num=10):
         lista.append(i)
 
     return lista
+
+#################################################
+
+class generadores():
+    pass
+
+    def info(self):
+        print('Funciones disponibles:')
+        print('----------------------------------------------')
+        print('DatosLineales()')
+        print('DatosLineales3D()')
+        print('DatosNoLineales()')
+        print('DatosClusters()')
+        print('DatosClusters3D()')
+        print('DatosLRegression()')
+        print('DatosSVM()')
+        print('DatosSVM3D')
+        print('DatosSVM2()')
+        print('DatosDistNormal')
+        print('DatosDistNormal3D()')
+        print('----------------------------------------------')
+        print('Más info en: https://github.com/Radhe-0/Generadores')
+
+generadores = generadores()
