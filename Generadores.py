@@ -122,11 +122,13 @@ def DatosSVM(num=10):
 #################################################
 
 def DatosSVM3D(num=10):
-
+    
+    lista = []
+    
     X = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
     Y = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
     Z = (np.r_[np.random.randn(num, 2) - [2, 2], np.random.randn(num, 2) + [2, 2]]).reshape(-1)
-    lista = []
+
 
     for i in zip(X,Y,Z):
         lista.append(i)
