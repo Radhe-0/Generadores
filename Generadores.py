@@ -18,7 +18,7 @@ def DatosLineales(num=10):
 
 #################################################
 
-def DatosLineales3D(num=10):
+def DatosLineales3D(num=10): ############ INCOMPLETO ############
 
     x = 2 * np.random.rand(num,1)
     x_ = [float(i) for i in x]
