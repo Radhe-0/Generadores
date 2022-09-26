@@ -209,7 +209,7 @@ class generadores():
         print('DatosClusters3D()')
         print('DatosLRegression()')
         print('DatosSVM()')
-        print('DatosSVM3D')
+        print('DatosSVM3D()')
         print('DatosSVM2()')
         print('DatosDistNormal')
         print('DatosDistNormal3D()')
