@@ -137,7 +137,13 @@ def DatosSVM3D(num=10):
 
 #################################################
 
-def DatosSVM2(num=10):
+def DatosSVM2(num=10,cumulo=None):
+
+    lista = []
+    cumulo1 = []
+    cumulo2 = []
+    cumulo3 = []
+    cumulo4 = []
 
     X = np.linspace(0,100,num)
     Y = np.linspace(0,100,num)
@@ -153,22 +159,38 @@ def DatosSVM2(num=10):
 
     Xmod4 = X * np.random.randn(num) + 500
     Ymod4 = Y * np.random.randn(num)
-
-    lista = []
     
     for i in zip(Xmod, Ymod):
         lista.append(i)
+        cumulo1.append(i)
 
     for i in zip(Xmod2, Ymod2):
         lista.append(i)
+        cumulo2.append(i)
 
     for i in zip(Xmod3, Ymod3):
         lista.append(i)
+        cumulo3.append(i)
 
     for i in zip(Xmod4, Ymod4):
         lista.append(i)
+        cumulo4.append(i)
 
-    return lista
+    if cumulo == 1:
+        return cumulo1
+    
+    if cumulo == 2:
+        return cumulo2
+    
+    if cumulo == 3:
+        return cumulo3
+    
+    if cumulo == 4:
+        return cumulo4
+    
+    if cumulo == None:
+        return lista
+
 #################################################
 
 def DatosSVM23D(num=10, cumulo=None):
