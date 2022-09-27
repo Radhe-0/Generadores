@@ -179,10 +179,10 @@ def DatosSVM23D(num=10):
     Y = np.linspace(0,100,num)
     Z = np.linspace(0,100,num)
 
+    # Cúmulos interiores-----------------------------
     Xmod = X * np.random.randn(num)
     Ymod = Y * np.random.randn(num) + 700
     Zmod = Z * np.random.randn(num)
-
 
     Xmod2 = X * np.random.randn(num) + 500
     Ymod2 = Y * np.random.randn(num) + 700
@@ -209,23 +209,23 @@ def DatosSVM23D(num=10):
     for i in zip(Xmod4, Ymod4, Zmod4):
         lista.append(i)
 
-    X = np.linspace(0,100,num)
-    Y = np.linspace(0,100,num)
-    Z = np.linspace(0,100,num)
-
-    Xmod5 = X * np.random.randn(num) - 500
+    # Cúmulos exteriores---------------------------
+    # 3
+    Xmod5 = X * np.random.randn(num)
     Ymod5 = Y * np.random.randn(num)
-    Zmod5 = Z * np.random.randn(num) - 500
+    Zmod5 = Z * np.random.randn(num) + 500
 
-
-    Xmod6 = X * np.random.randn(num)
+    # 4
+    Xmod6 = X * np.random.randn(num) + 500
     Ymod6 = Y * np.random.randn(num)
-    Zmod6 = Z * np.random.randn(num) - 500
+    Zmod6 = Z * np.random.randn(num) + 500
 
-    Xmod7 = X * np.random.randn(num) - 500
+    # 1
+    Xmod7 = X * np.random.randn(num) + 500
     Ymod7 = Y * np.random.randn(num)
     Zmod7 = Z * np.random.randn(num)
 
+    # 2
     Xmod8 = X * np.random.randn(num)
     Ymod8 = Y * np.random.randn(num)
     Zmod8 = Z * np.random.randn(num)
