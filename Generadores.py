@@ -171,9 +171,18 @@ def DatosSVM2(num=10):
     return lista
 #################################################
 
-def DatosSVM23D(num=10):
+def DatosSVM23D(num=10, cumulo=None):
     
     lista = []
+
+    cumulo1 = []
+    cumulo2 = []
+    cumulo3 = []
+    cumulo4 = []
+    cumulo5 = []
+    cumulo6 = []
+    cumulo7 = []
+    cumulo8 = []
     
     X = np.linspace(0,100,num)
     Y = np.linspace(0,100,num)
@@ -199,50 +208,79 @@ def DatosSVM23D(num=10):
 
     for i in zip(Xmod, Ymod, Zmod):
         lista.append(i)
+        cumulo1.append(i)
 
     for i in zip(Xmod2, Ymod2, Zmod2):
         lista.append(i)
+        cumulo2.append(i)
 
     for i in zip(Xmod3, Ymod3, Zmod3):
         lista.append(i)
+        cumulo3.append(i)
 
     for i in zip(Xmod4, Ymod4, Zmod4):
         lista.append(i)
+        cumulo4.append(i)
 
     # Cúmulos exteriores---------------------------
-    # 3
     Xmod5 = X * np.random.randn(num)
     Ymod5 = Y * np.random.randn(num)
     Zmod5 = Z * np.random.randn(num) + 500
 
-    # 4
     Xmod6 = X * np.random.randn(num) + 500
     Ymod6 = Y * np.random.randn(num)
     Zmod6 = Z * np.random.randn(num) + 500
 
-    # 1
     Xmod7 = X * np.random.randn(num) + 500
     Ymod7 = Y * np.random.randn(num)
     Zmod7 = Z * np.random.randn(num)
 
-    # 2
     Xmod8 = X * np.random.randn(num)
     Ymod8 = Y * np.random.randn(num)
     Zmod8 = Z * np.random.randn(num)
 
     for i in zip(Xmod5, Ymod5, Zmod5):
         lista.append(i)
+        cumulo5.append(i)
 
     for i in zip(Xmod6, Ymod6, Zmod6):
         lista.append(i)
+        cumulo6.append(i)
 
     for i in zip(Xmod7, Ymod7, Zmod7):
         lista.append(i)
+        cumulo7.append(i)
 
     for i in zip(Xmod8, Ymod8, Zmod8):
         lista.append(i)
+        cumulo8.append(i)
 
-    return lista
+    if cumulo == 1:
+        return cumulo1
+
+    if cumulo == 2:
+        return cumulo2
+
+    if cumulo == 3:
+        return cumulo3
+
+    if cumulo == 4:
+        return cumulo4
+
+    if cumulo == 5:
+        return cumulo5
+
+    if cumulo == 6:
+        return cumulo6
+
+    if cumulo == 7:
+        return cumulo7
+
+    if cumulo == 8:
+        return cumulo8
+        
+    if cumulo == None
+        return lista
 
 #################################################
 
