@@ -301,7 +301,7 @@ def DatosSVM23D(num=10, cumulo=None):
     if cumulo == 8:
         return cumulo8
         
-    if cumulo == None
+    if cumulo == None:
         return lista
 
 #################################################
